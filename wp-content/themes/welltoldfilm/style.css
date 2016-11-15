@@ -22,29 +22,29 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
-# Accessibility
-# Alignments
-# Clearings
-# Typography
-# Forms
-# Buttons
-# Formatting
-# Lists
-# Tables
-# Navigation
-# Links
-# Layout
+1 Normalize
+2 Accessibility
+3 Alignments
+4 Clearings
+5 Typography
+6 Forms
+7 Buttons
+8 Formatting
+9 Lists
+10 Tables
+11 Navigation
+12 Links
+13 Layout
 	## Posts
 	## Pages
-# Comments
-# Widgets
-# Infinite scroll
-# Media
+14 Comments
+15 Widgets
+16 Infinite scroll
+17 Media
 	## Galleries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# Normalize
+1 Normalize
 --------------------------------------------------------------*/
 html {
   font-family: sans-serif;
@@ -263,7 +263,7 @@ th {
 }
 
 /*--------------------------------------------------------------
-# Accessibility
+2 Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
 .screen-reader-text {
@@ -300,7 +300,7 @@ th {
 }
 
 /*--------------------------------------------------------------
-# Alignments
+3 Alignments
 --------------------------------------------------------------*/
 .alignleft {
   display: inline;
@@ -322,7 +322,7 @@ th {
 }
 
 /*--------------------------------------------------------------
-# Clearings
+4 Clearings
 --------------------------------------------------------------*/
 .clear:before,
 .clear:after,
@@ -351,7 +351,7 @@ th {
 }
 
 /*--------------------------------------------------------------
-# Typography
+5 Typography
 --------------------------------------------------------------*/
 body,
 button,
@@ -425,7 +425,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 /*--------------------------------------------------------------
-# Forms
+6 Forms
 --------------------------------------------------------------*/
 input[type="text"],
 input[type="email"],
@@ -494,7 +494,7 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-# Forms
+7 Buttons
 --------------------------------------------------------------*/
 button,
 input[type="button"],
@@ -531,7 +531,7 @@ input[type="submit"]:focus {
 }
 
 /*--------------------------------------------------------------
-# Formattings
+8 Formattings
 --------------------------------------------------------------*/
 hr {
   background-color: #ccc;
@@ -541,7 +541,7 @@ hr {
 }
 
 /*--------------------------------------------------------------
-# Lists
+9 Lists
 --------------------------------------------------------------*/
 ul, ol {
   margin: 0 0 1.5em 3em;
@@ -570,7 +570,7 @@ dd {
 }
 
 /*--------------------------------------------------------------
-# Tables
+10 Tables
 --------------------------------------------------------------*/
 table {
   margin: 0 0 1.5em;
@@ -578,94 +578,26 @@ table {
 }
 
 /*--------------------------------------------------------------
-# Navigation
+11 Navigation
 --------------------------------------------------------------*/
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%;
+
+.navbar-default {
+    background-color: transparent;
+    border-color: #e7e7e7;
 }
-.main-navigation ul {
-  display: none;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-.main-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
-  position: absolute;
-  top: 1.5em;
-  left: -999em;
-  z-index: 99999;
-}
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0;
-}
-.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-  left: 100%;
-}
-.main-navigation ul ul a {
-  width: 200px;
-}
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-  left: auto;
-}
-.main-navigation li {
-  float: left;
-  position: relative;
-}
-.main-navigation a {
+.menu-item a {
   display: block;
   text-decoration: none;
+  color:black;
+  font-weight: bold;
+  font-size: 1.8em;
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block;
-}
 
-.menu-toggle:before {
-  content: "\2630";
-  display: inline-block;
-  margin-right: 5px;
-}
-
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none;
-  }
-
-  .main-navigation ul {
-    display: block;
-  }
-}
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden;
-}
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%;
-}
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%;
-}
 
 /*--------------------------------------------------------------
-# Links
+12 Links
 --------------------------------------------------------------*/
 a {
   color: royalblue;
@@ -675,35 +607,18 @@ a:visited {
 }
 a:hover, a:focus, a:active {
   color: midnightblue;
+
 }
 a:focus {
   outline: thin dotted;
 }
 a:hover, a:active {
   outline: 0;
+  transition: color 600ms;
 }
 
 /*--------------------------------------------------------------
-# Links
---------------------------------------------------------------*/
-a {
-  color: royalblue;
-}
-a:visited {
-  color: purple;
-}
-a:hover, a:focus, a:active {
-  color: midnightblue;
-}
-a:focus {
-  outline: thin dotted;
-}
-a:hover, a:active {
-  outline: 0;
-}
-
-/*--------------------------------------------------------------
-# Layout
+13 Layout
 --------------------------------------------------------------*/
 html {
   box-sizing: border-box;
@@ -791,7 +706,7 @@ body {
 }
 
 /*--------------------------------------------------------------
-# Comments
+14 Comments
 --------------------------------------------------------------*/
 .comment-content a {
   word-wrap: break-word;
@@ -802,7 +717,7 @@ body {
 }
 
 /*--------------------------------------------------------------
-# Widgets
+15 Widgets
 --------------------------------------------------------------*/
 .widget {
   margin: 0 0 1.5em;
@@ -813,7 +728,7 @@ body {
 }
 
 /*--------------------------------------------------------------
-# Infinite scroll
+16 Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation,
@@ -828,7 +743,7 @@ body {
 }
 
 /*--------------------------------------------------------------
-# Media
+17 Media
 --------------------------------------------------------------*/
 img {
   height: auto;
