@@ -42,6 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 16 Infinite scroll
 17 Media
 	## Galleries
+18 Hero-Video
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1 Normalize
@@ -825,4 +826,16 @@ object {
 
 .gallery-caption {
   display: block;
+}
+
+/*--------------------------------------------------------------
+18 Hero_video
+--------------------------------------------------------------*/
+.video-wrapper{
+  width: 100%;
+}
+
+video {
+  margin: auto;
+  width: 100%;
 }

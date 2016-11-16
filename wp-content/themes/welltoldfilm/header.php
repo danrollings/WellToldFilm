@@ -35,6 +35,10 @@
 		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
 
 		<?php welltoldfilm_social_menu(); ?>
-
+		<div class="video-wrapper">
+			<video autoplay poster ="" loop="loop" preload="metadata">
+				<source src="http://www.nightshiftpost.com/wp-content/uploads/2016/04/161027_WORK_LOOP_HOME.mp4" type="video/mp4">
+			</video> 
+		</div>
 	</header>
 	<div id="content" class="site-content">

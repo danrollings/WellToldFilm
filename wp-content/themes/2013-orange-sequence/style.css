@@ -1,0 +1,195 @@
+/*
+Theme Name:     2013 Orange Sequence
+Theme URI:      http://noscope.com/2013/twenty-thirteen-make-it-yours/
+Description:    Sequentially alternating colors instead of per post formats color scheme for Twenty Thirteen.
+Author:         Joen Asmussen
+Author URI:     http://noscope.com
+Template:       twentythirteen
+Version:        1.0.9
+License: 		GNU General Public License v2 or later
+License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
+Tags: orange, red, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+Please fork this theme. Please modify it. Please make it your own. Then share it back with the community.
+
+2013 Orange Sequence WordPress theme, Copyright (C) 2013 Joen Asmussen.
+2013 Orange Sequence WordPress theme is licensed under the GPL.
+*/
+
+
+/**
+ * Standard
+ */
+
+.blog .format-link:first-of-type, .single .format-link:first-of-type, .format-link + .format-aside, .format-link + .format-link, .format-aside + .format-aside {
+	box-shadow: none;
+}
+
+.blog .format-aside:first-of-type, .single .format-aside:first-of-type, .format-aside + .format-aside, .format-aside + .format-link, .format-link + .format-aside {
+	box-shadow: none;
+}
+
+
+/**
+ * First post 
+ */
+
+#content .hentry:nth-of-type( 7n + 1 ) {
+	background-color: #fff;
+}
+
+#content .hentry:nth-of-type( 7n + 1 ) .entry-content,
+#content .hentry:nth-of-type( 7n + 1 ) .entry-summary {
+	color: #141412;
+}
+
+#content .hentry:nth-of-type( 7n + 1 ) .entry-meta,
+#content .hentry:nth-of-type( 7n + 1 ) .entry-meta a,
+#content .hentry:nth-of-type( 7n + 1 ) .entry-content a,
+#content .hentry:nth-of-type( 7n + 1 ) .entry-summary a {
+	color: #bc360a;
+}
+
+
+/**
+ * Second post 
+ */
+
+#content .hentry:nth-of-type( 7n + 2 ) {
+	background-color: #f7f5e7;
+}
+
+#content .hentry:nth-of-type( 7n + 2 ) .entry-content,
+#content .hentry:nth-of-type( 7n + 2 ) .entry-summary {
+	color: #141412;
+}
+
+#content .hentry:nth-of-type( 7n + 2 ) .entry-title a,
+#content .hentry:nth-of-type( 7n + 2 ) .entry-title a:hover {
+	color: #141412;
+}
+
+#content .hentry:nth-of-type( 7n + 2 ) .entry-meta,
+#content .hentry:nth-of-type( 7n + 2 ) .entry-meta a,
+#content .hentry:nth-of-type( 7n + 2 ) .entry-content a,
+#content .hentry:nth-of-type( 7n + 2 ) .entry-summary a {
+	color: #bc360a;
+}
+
+
+/**
+ * Third post 
+ */
+
+#content .hentry:nth-of-type( 7n + 3 ) {
+	background-color: #210d10;
+}
+
+#content .hentry:nth-of-type( 7n + 3 ) .entry-content,
+#content .hentry:nth-of-type( 7n + 3 ) .entry-summary {
+	color: #fff;
+}
+
+#content .hentry:nth-of-type( 7n + 3 ) .entry-title a,
+#content .hentry:nth-of-type( 7n + 3 ) .entry-title a:hover {
+	color: #fff;
+}
+
+#content .hentry:nth-of-type( 7n + 3 ) .entry-meta,
+#content .hentry:nth-of-type( 7n + 3 ) .entry-meta a,
+#content .hentry:nth-of-type( 7n + 3 ) .entry-content a,
+#content .hentry:nth-of-type( 7n + 3 ) .entry-summary a {
+	color: #e63f2a;
+}
+
+
+/**
+ * Fourth post 
+ */
+
+#content .hentry:nth-of-type( 7n + 4 ) {
+	background-color: #722d19;
+}
+
+#content .hentry:nth-of-type( 7n + 4 ) .entry-content,
+#content .hentry:nth-of-type( 7n + 4 ) .entry-summary {
+	color: #fff;
+}
+
+#content .hentry:nth-of-type( 7n + 4 ) .entry-title a,
+#content .hentry:nth-of-type( 7n + 4 ) .entry-title a:hover {
+	color: #fff;
+}
+
+#content .hentry:nth-of-type( 7n + 4 ) .entry-meta,
+#content .hentry:nth-of-type( 7n + 4 ) .entry-meta a,
+#content .hentry:nth-of-type( 7n + 4 ) .entry-content a,
+#content .hentry:nth-of-type( 7n + 4 ) .entry-summary a {
+	color: #fff;
+}
+
+
+/**
+ * Fifth post 
+ */
+
+#content .hentry:nth-of-type( 7n + 5 ) {
+	background-color: #db572f;
+}
+
+#content .hentry:nth-of-type( 7n + 5 ) .entry-content,
+#content .hentry:nth-of-type( 7n + 5 ) .entry-summary {
+	color: #141412;
+}
+
+#content .hentry:nth-of-type( 7n + 5 ) .entry-meta,
+#content .hentry:nth-of-type( 7n + 5 ) .entry-meta a,
+#content .hentry:nth-of-type( 7n + 5 ) .entry-content a,
+#content .hentry:nth-of-type( 7n + 5 ) .entry-summary a {
+	color: #fff;
+}
+
+
+/**
+ * Sixth post 
+ */
+
+#content .hentry:nth-of-type( 7n + 6 ) {
+	background-color: #fbca3c;
+}
+
+#content .hentry:nth-of-type( 7n + 6 ) .entry-content,
+#content .hentry:nth-of-type( 7n + 6 ) .entry-summary {
+	color: #141412;
+}
+
+#content .hentry:nth-of-type( 7n + 6 ) .entry-title a,
+#content .hentry:nth-of-type( 7n + 6 ) .entry-title a:hover {
+	color: #141412;
+}
+
+#content .hentry:nth-of-type( 7n + 6 ) .entry-meta,
+#content .hentry:nth-of-type( 7n + 6 ) .entry-meta a,
+#content .hentry:nth-of-type( 7n + 6 ) .entry-content a,
+#content .hentry:nth-of-type( 7n + 6 ) .entry-summary a {
+	color: #722d19;
+}
+
+
+
+/**
+ * Seventh post 
+ */
+
+#content .hentry:nth-of-type( 7n + 7 ) {
+	background-color: #eadaa6;
+}
+
+#content .hentry:nth-of-type( 7n + 7 ) .entry-meta,
+#content .hentry:nth-of-type( 7n + 7 ) .entry-meta a,
+#content .hentry:nth-of-type( 7n + 7 ) .entry-content a,
+#content .hentry:nth-of-type( 7n + 7 ) .entry-summary a {
+	color: #722d19;
+}
+
