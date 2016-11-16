@@ -21,8 +21,25 @@ get_header(); ?>
 
 			if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<h1 class="page-title screen-reader-text">	
+						<?php single_post_title(); ?>
+					</h1>
+					<div class="video-wrapper">
+						<video autoplay poster ="" loop="loop" preload="metadata">
+							<source src="	http://localhost:8888/wp-content/uploads/2016/11/The-Speech-Giver-DAN-LOGO-HD-1080p-FINAL-HD-1080p.webm" type="video/webm">
+							<source src="http://localhost:8888/wp-content/uploads/2016/11/The-Speech-Giver-DAN-LOGO-HD-1080p-FINAL-HD-1080p.mp4" type="video/mp4">
+						</video> 
+					</div>
 				</header>
+			<?php
+			endif;
+
+			if ( is_home() && ! is_front_page() ) : ?>
+				<div id="intro-text">
+					<h2 class="intro intro-title">What we do!</h2>
+					<p class="intro intro-para">Bespoke pabst blog, small batch live-edge sustainable pitchfork pop-up. Paleo whatever thundercats kitsch four loko, fap chambray scenester pug banjo offal mustache prism shabby chic narwhal. Pork belly letterpress bicycle rights salvia tofu waistcoat. Tofu thundercats fingerstache, tumblr tbh knausgaard intelligentsia pickled shoreditch tacos health goth coloring book iPhone enamel pin chicharrones. Tumblr jianbing pickled, subway tile vape pork belly thundercats tofu gochujang shoreditch keytar. Kogi meggings hot chicken, four dollar toast ugh sustainable roof party direct trade migas green juice cray pinterest single-origin coffee scenester raclette. Migas poutine yr, chartreuse crucifix jean shorts pitchfork cornhole farm-to-table waistcoat affogato hoodie iPhone.</p>
+
+				</div>
 			<?php
 			endif;
 
