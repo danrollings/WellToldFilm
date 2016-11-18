@@ -8,7 +8,7 @@
  */
 
 ?>
-
+        <div class="col-xs-12 col-s-6 col-md-4 col-lg-3">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( '' != get_the_post_thumbnail() ) : ?>
 		<div class="post-thumbnail">
@@ -35,7 +35,7 @@
 	</div>
 
 	<header class="entry-header">
-		<?php
+			<?php
 			if ( is_single() ) {
 				the_title( '<h1 class="entry-title">', '</h1>' );
 			} else {
@@ -49,3 +49,4 @@
 	</header>
 	<?php get_template_part( 'components/post/content', 'footer' ); ?>
 </article><!-- #post-## -->
+</div>

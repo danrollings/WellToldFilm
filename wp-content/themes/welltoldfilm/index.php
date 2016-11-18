@@ -25,10 +25,10 @@ get_header(); ?>
 						<?php single_post_title(); ?>
 					</h1>
 					<div class="video-wrapper">
-						<video autoplay poster ="" loop="loop" preload="metadata">
+						<!--<video autoplay poster ="" loop="loop" preload="metadata">
 							<source src="	http://localhost:8888/wp-content/uploads/2016/11/The-Speech-Giver-DAN-LOGO-HD-1080p-FINAL-HD-1080p.webm" type="video/webm">
 							<source src="http://localhost:8888/wp-content/uploads/2016/11/The-Speech-Giver-DAN-LOGO-HD-1080p-FINAL-HD-1080p.mp4" type="video/mp4">
-						</video> 
+						</video> -->
 					</div>
 				</header>
 			<?php
@@ -41,10 +41,13 @@ get_header(); ?>
 
 				</div>
 			<?php
-			endif;
-
+			endif;?>
+			<div class="col">
+			<h1>Video</h1>
+<?php
 			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+			query_posts('cat=3');
+			$i = 1; while ( have_posts() && $i < 7) : the_post();
 
 				/*
 				 * Include the Post-Format-specific template for the content.
@@ -53,7 +56,25 @@ get_header(); ?>
 				 */
 				get_template_part( 'components/post/content', get_post_format() );
 
-			endwhile;
+			$i++; endwhile;?>
+			</div>
+			<div class="col">
+			<h1>Web</h1>
+
+			<?php
+			query_posts('cat=1');
+			$i = 1; while ( have_posts() && $i < 4) : the_post();
+
+				/*
+				 * Include the Post-Format-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+				 */
+				get_template_part( 'components/post/content', get_post_format() );
+
+			$i++; endwhile;?>
+			</div>
+			<?php
 
 			the_posts_navigation();
 
@@ -62,7 +83,7 @@ get_header(); ?>
 			get_template_part( 'components/post/content', 'none' );
 
 		endif; ?>
-
+			</div>
 		</main>
 	</div>
 <?php
