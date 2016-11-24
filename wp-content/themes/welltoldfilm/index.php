@@ -46,7 +46,7 @@ get_header(); ?>
 			<h1>Video</h1>
 <?php
 			/* Start the Loop */
-			query_posts('cat=3');
+			query_posts('post_type= video');
 			$i = 1; while ( have_posts() && $i < 7) : the_post();
 
 				/*
@@ -62,7 +62,7 @@ get_header(); ?>
 			<h1>Web</h1>
 
 			<?php
-			query_posts('cat=1');
+			query_posts('post_type= web');
 			$i = 1; while ( have_posts() && $i < 4) : the_post();
 
 				/*

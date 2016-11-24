@@ -1,0 +1,347 @@
+.hiddenslide,
+.hide {
+	display: none;
+}
+
+img {
+	height: auto;
+}
+
+.wp-smiley {
+	margin: 0;
+}
+
+.pager {
+	overflow: hidden;
+}
+
+.pager li {
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+.pager li.next {
+	text-align: right;
+}
+
+.social-icon .fa {
+	margin-top: -1px;
+}
+
+.flexslider .slides img {
+	height: auto;
+}
+
+.comment-author {
+	text-align: center;
+}
+
+.logo img {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	display: block;
+}
+
+/*post pagination*/
+
+.post-pagination{
+	margin-left:0;
+	margin-right:0;
+	margin-bottom:66px;
+}
+
+.post-pagination .pagination{
+  margin-top:15px;
+}
+
+
+.pagination span.current, .pagination a {
+  display: inline-block;
+  padding: 8px 12px;
+  width:36px;
+  text-align:center;
+  background-color: transparent;
+  border:1px solid #d4a16b;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #d4a16b;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all .3s ease;
+
+}
+
+.pagination span.current,
+.pagination span.current:hover, 
+.pagination a:hover {
+  background: #d4a16b;
+  border-color:#d4a16b;
+  color:#fff;
+  text-decoration: none;
+}
+
+.pagination .page-info {  
+  background: none;
+  padding-left: 0px;
+  color:#888;
+  margin-right:20px;
+}
+
+.pagination .page-info:hover {
+  background: none;
+}
+
+.pagination .current {
+  background: #d4a16b;
+  color:#fff;
+}
+
+.pagination span.current:hover{
+  cursor:default;
+}
+
+.page-links{
+  margin-top:15px;
+}
+
+.post .pager{
+  margin-top:30px;
+  clear:both;
+  overflow:hidden;
+}
+
+.post .pager a{
+	font-weight:bold;
+}
+
+.post .pager .previous{
+  float:left;
+}
+
+.post .pager .next{
+  float:right;
+}
+
+.post .pager .disabled a,
+.post .pager .disabled a:hover{
+  color:#ddd;
+  cursor:default;
+  text-decoration: none;
+}
+
+/*portfolio pager*/
+.projects-wrapper .post-pagination > .span12{
+  display:inline-block;
+  left:50%;
+  position:relative;
+}
+
+.projects-wrapper .post-pagination{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.projects-wrapper .post-pagination .pagination{
+  display:inline-block;
+  position:relative;
+  left:-50%;
+  margin:20px 0;
+}
+
+
+/*widgets*/
+.widget_nav_menu .sub-menu{
+	margin-left:10px;
+}
+
+
+.widget_rss h6 a{
+	color: #222222;
+	margin-left:5px;
+}
+
+.widget_rss li{
+	margin-bottom:20px;
+}
+
+.widget_rss .rss-date{
+	display:block;
+	font-size:11px;
+	margin-bottom:5px;
+	font-weight:bold;
+}
+
+.widget_rss .rssSummary{
+	font-size:13px;
+	margin-bottom:5px;
+	color:black;
+}
+
+.widget_rss cite{
+	font-size:13px;
+}
+
+.testimonials-slider p {
+	margin-bottom: 10px;
+}
+
+.testimonials-slider .flex-control-nav {
+	bottom: -50px;
+	top: auto;
+}
+
+.social-link {
+	background: #222;
+}
+
+.social-link a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+}
+
+.social-link .icon {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+.social-link .icon:before {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+.color-icon-social_facebook {
+	background-color: #3c5a99;
+}
+
+.color-icon-social_twitter {
+	background-color: #55acee;
+}
+
+.color-icon-social_dribbble {
+	background-color: #d9608e;
+}
+
+.color-icon-social_googleplus {
+	background-color: #cc5947;
+}
+
+.color-icon-social_blogger {
+	background-color: #F79037;
+}
+
+.color-icon-social_delicious {
+	background-color: #3399FF;
+}
+
+.color-icon-social_deviantart {
+	background-color: #404F4C;
+}
+
+.color-icon-social_flickr {
+	background-color: #E2006B;
+}
+
+.color-icon-social_googledrive {
+	background-color: #3777E3;
+}
+
+.color-icon-social_instagram {
+	background-color: #A98469;
+}
+
+.color-icon-social_linkedin {
+	background-color: #0274B3;
+}
+
+.color-icon-social_myspace {
+	background-color: #1F6AB1;
+}
+
+.color-icon-social_picassa {
+	background-color: #DF333E;
+}
+
+.color-icon-social_pinterest {
+	background-color: #CC2127;
+}
+
+.color-icon-social_rss {
+	background-color: #FEA150;
+}
+
+.color-icon-social_skype {
+	background-color: #00AEED;
+}
+
+.color-icon-social_spotify {
+	background-color: #80B819;
+}
+
+.color-icon-social_tumbleupon {
+	background-color: #CC492B;
+}
+
+.color-icon-social_tumblr {
+	background-color: #2D4865;
+}
+
+body {
+	position: static;
+}
+
+#mobile-toggle .icon {
+	display: block;
+}
+
+@media (max-width: 767px) {
+
+	.about-detail {
+		display: block;
+	}
+
+	.team-member {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.team-member .team-social {
+		margin-bottom: 25px;
+	}
+
+	.about-detail .large-10 > p {
+		padding: 0 20px;
+	}
+
+	.process-line {
+		display: none;
+	}
+
+	.process-button {
+		display: block;
+	}
+
+	.process-separator {
+		margin: 10px 0;
+	}
+
+	.about-icons .icon {
+		margin: 20px 0;
+	}
+
+	.filters {
+		margin-bottom: 10px;
+	}
+
+}
+
+.post-slider .flex-control-paging li a{ border-color: #fff; }
+.post-slider .flex-control-paging li a:hover{ background: #fff; }
+.post-slider .flex-control-paging li a.flex-active{ background: #fff; }
+.project-slider .flex-control-paging li a{ border-color: #fff; }
+.project-slider .flex-control-paging li a:hover{ background: #fff; }
+.project-slider .flex-control-paging li a.flex-active{ background: #fff; }
