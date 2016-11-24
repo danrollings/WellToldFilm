@@ -39,6 +39,7 @@ function welltoldfilm_posted_on() {
 }
 endif;
 
+
 if ( ! function_exists( 'welltoldfilm_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.

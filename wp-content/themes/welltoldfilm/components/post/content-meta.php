@@ -1,3 +1,4 @@
 		<div class="entry-meta">
-			<!--<?php welltoldfilm_posted_on(); ?>-->
+		<h1> HELLO WORLD</h1>
+			<?php welltoldfilm_posted_on(); ?>
 		</div><!-- .entry-meta -->

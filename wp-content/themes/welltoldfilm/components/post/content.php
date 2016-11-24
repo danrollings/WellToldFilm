@@ -8,7 +8,14 @@
  */
 
 ?>
-        <div class="col-xs-12 col-s-6 col-md-4 col-lg-3">
+
+<?php
+			if ( is_single() ) : ?>
+				'<div class="col-xs-12 col-s-12 col-md-12 col-lg-12">
+			<?php else : ?>
+				<div class="col-xs-12 col-s-6 col-md-4 col-lg-3">
+			<?php endif; ?>
+        
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( '' != get_the_post_thumbnail() ) : ?>
 		<div class="post-thumbnail">
@@ -16,9 +23,25 @@
 				<?php the_post_thumbnail( 'welltoldfilm-featured-image' ); ?>
 			</a>
 		</div>
+
 	<?php endif; ?>
 
-	
+<?php
+
+  $mykey_values = get_post_custom_values( '_video_url' );
+  foreach ( $mykey_values as $key => $value ) {
+    echo "$value <br />"; 
+  }
+?>
+
+<?php
+
+  $mykey_values = get_post_custom_values( '_web_url' );
+  foreach ( $mykey_values as $key => $value ) {
+    echo "$value <br />"; 
+  }
+?>
+
 	<div class="entry-content">
 		<?php
 			the_content( sprintf(
