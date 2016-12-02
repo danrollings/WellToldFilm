@@ -25,22 +25,33 @@
 		</div>
 
 	<?php endif; ?>
-
-<?php
-
+<div class="video_post">
+<video id="player1" controls="control" preload="none"><source src="<?php
   $mykey_values = get_post_custom_values( '_video_url' );
   foreach ( $mykey_values as $key => $value ) {
-    echo "$value <br />"; 
+    echo "$value"; 
   }
-?>
+?>" type="video/youtube"></video>
+<script>
+jQuery(document).ready(function($) {
 
+	// declare object for video
+	var player = new MediaElementPlayer('#player1');
+
+});
+</script>
+
+
+</div>
+<div class="web_post">
 <?php
-
   $mykey_values = get_post_custom_values( '_web_url' );
   foreach ( $mykey_values as $key => $value ) {
     echo "$value <br />"; 
   }
 ?>
+
+</div>
 
 	<div class="entry-content">
 		<?php
@@ -73,3 +84,4 @@
 	<?php get_template_part( 'components/post/content', 'footer' ); ?>
 </article><!-- #post-## -->
 </div>
+

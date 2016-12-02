@@ -83,6 +83,9 @@ get_header(); ?>
 			</div>
 		</main>
 	</div>
+
 <?php
 get_sidebar();
 get_footer();
+
+
