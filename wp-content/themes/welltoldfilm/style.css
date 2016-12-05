@@ -851,3 +851,12 @@ font-size: 7em;
 .intro-para{
 font-size: 3em;
 }
+
+
+
+.video_post{
+  border: solid 1px red;
+}
+.web_post{
+  border: solid 1px green;
+}

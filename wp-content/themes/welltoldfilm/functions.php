@@ -140,15 +140,23 @@ add_action( 'widgets_init', 'welltoldfilm_widgets_init' );
  * Enqueue scripts and styles.
  */
 function welltoldfilm_scripts() {
+
+
 	wp_enqueue_style( 'welltoldfilm-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'MediaElement', 'https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.js', array('jquery'), '20151215', true);
+
+	wp_enqueue_script('VideoPlayer', get_template_directory_uri() . '/assets/js/video_player.js', array('jquery'), '20151215', true);
 
 	wp_enqueue_script( 'welltoldfilm-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'welltoldfilm-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
 }
 add_action( 'wp_enqueue_scripts', 'welltoldfilm_scripts' );
 
@@ -176,3 +184,5 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
