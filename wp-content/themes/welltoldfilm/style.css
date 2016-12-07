@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 17 Media
 	## Galleries
 18 Hero-Video & custom
+19 Home -post styling
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1 Normalize
@@ -852,11 +853,30 @@ font-size: 7em;
 font-size: 3em;
 }
 
-
+/*--------------------------------------------------------------
+19 HOME
+--------------------------------------------------------------*/
 
 .video_post{
-  border: solid 1px red;
+  
 }
 .web_post{
   border: solid 1px green;
+  overflow: hidden;
+  max-height: 32em;
+}
+
+.mejs-video {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.mejs-overlay-play {
+    cursor: pointer;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.ytp-title-link{
+    display: none !important;
 }

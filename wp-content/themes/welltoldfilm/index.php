@@ -25,10 +25,10 @@ get_header(); ?>
 						<?php single_post_title(); ?>
 					</h1>
 					<div class="video-wrapper">
-						<!--<video autoplay poster ="" loop="loop" preload="metadata">
+						<video autoplay poster ="" loop="loop" preload="metadata" controls="none">
 							<source src=" http://localhost:8888/wp-content/uploads/2016/11/The-Speech-Giver-DAN-LOGO-HD-1080p-FINAL-HD-1080p.webm" type="video/webm">
 							<source src="http://localhost:8888/wp-content/uploads/2016/11/The-Speech-Giver-DAN-LOGO-HD-1080p-FINAL-HD-1080p.mp4" type="video/mp4">
-						</video> -->
+						</video>
 					</div>
 				</header>
 

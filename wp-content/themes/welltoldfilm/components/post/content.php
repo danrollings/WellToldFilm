@@ -13,7 +13,7 @@
 '
 <div class="col-xs-12 col-s-12 col-md-12 col-lg-12">
 <?php else : ?>
-<div class="col-xs-12 col-s-6 col-md-4 col-lg-3">
+<div class="col-xs-12 col-s-6 col-md-6 col-lg-4">
   <?php endif; ?>
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php if ( '' != get_the_post_thumbnail() ) : ?>
@@ -29,15 +29,15 @@
     <?php endif; 
       if( get_post_type() == 'video') : ?>
     <div class="video_post">
-      <video controls="control" preload="none">
-        <source src="<?php
-          $mykey_values = get_post_custom_values( '_video_url' );
-          foreach ( $mykey_values as $key => $value ) {
+      <div class="embed-responsive embed-responsive-16by9">
+        <div data-type="vimeo" data-video-id="<?php
+            $mykey_values = get_post_custom_values( '_video_url' );
+            foreach ( $mykey_values as $key => $value ) {
             echo "$value"; 
-          }
-          ?>" type="video/youtube">
-      </video>
-        <header class="entry-header">
+            }
+          ?>"></div>
+      </div>
+      <header class="entry-header">
           <?php
             if ( is_single() ) {
               the_title( '<h1 class="entry-title">', '</h1>' );
@@ -53,6 +53,17 @@
 
     <!-- WEB-->
     <div class="web_post">
+
+          <header class="entry-header">
+      <?php
+        if ( is_single() ) {
+          the_title( '<h1 class="entry-title">', '</h1>' );
+        } else {
+          the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+        }
+      ?>
+          
+      </header>
       <?php
         $mykey_values = get_post_custom_values( '_web_url' );
         foreach ( $mykey_values as $key => $value ) {
@@ -73,16 +84,7 @@
           ) );
           ?>
       </div>
-      <header class="entry-header">
-      <?php
-        if ( is_single() ) {
-          the_title( '<h1 class="entry-title">', '</h1>' );
-        } else {
-          the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-        }
-      ?>
-          
-      </header>
+
       <?php
         
         if ( 'post' === get_post_type() ) : ?>

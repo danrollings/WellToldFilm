@@ -144,9 +144,7 @@ function welltoldfilm_scripts() {
 
 	wp_enqueue_style( 'welltoldfilm-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'MediaElement', 'https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.js', array('jquery'), '20151215', true);
-
-	wp_enqueue_script('VideoPlayer', get_template_directory_uri() . '/assets/js/video_player.js', array('jquery'), '20151215', true);
+	wp_enqueue_script('plyr', get_template_directory_uri() . '/assets/js/plyr.js', array('jquery'), '20151215', true);
 
 	wp_enqueue_script( 'welltoldfilm-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 

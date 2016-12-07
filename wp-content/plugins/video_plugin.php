@@ -34,7 +34,7 @@ function video_setup() {
 		'has_archive' => true,
 		'map_meta_cap' => true,
 		'menu_icon' => 'dashicons-video-alt',		
-		'supports' => array( 'title', 'editor', 'thumbnail', 'author', '_video_url'),
+		'supports' => array( 'title', 'editor', 'author', 'tags', '_video_url'),
 		'taxonomies' => array( 'video' )
 	);
 	register_post_type( 'video', $args );
@@ -68,7 +68,7 @@ add_action( 'init', 'video_register_taxonomies' );
  */
 
 function video_add_meta_boxes($post){
-	add_meta_box('video_meta_box', __('Video URL', 'video_link_plugin'), 'video_build_meta_box', 'video', 'side', 'low');
+	add_meta_box('video_meta_box', __('Vimeo Video Number', 'video_link_plugin'), 'video_build_meta_box', 'video', 'side', 'low');
 
 }
 
@@ -87,7 +87,7 @@ function video_build_meta_box($post){
 	$current_videourl = get_post_meta( $post->ID, '_video_url', true );
 	?>
 	<div class='video wrapper'>
-		<h3><?php _e( 'Video Url', 'video_link_plugin' ); ?></h3>
+		<h3><?php _e( 'Vimeo Video Number', 'video_link_plugin' ); ?></h3>
 			<p>
 				<input type="text" name="video" value="<?php echo $current_videourl; ?>" /> 
 			</p>
